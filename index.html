@@ -1,0 +1,50 @@
+<html>
+
+<head>
+	<TITLE> Обчислення максимального значення </TITLE>
+	<script language="JavaScript">
+		function invert(obj) {
+			var a = Number(obj.num1.value);
+			obj.res.value = a * 100;
+		}
+
+		function task2(form) {
+			var a = Number(form.num.value)
+			form.increment.value = ++a;
+
+			var b = Number(form.num.value)
+			form.decrement.value = --b;
+		}
+
+
+
+	</script>
+</head>
+
+<body>
+	<br><br><br>
+	<H4> Перетворюємо метр в сантиметр </H4>
+	<form Name="form1">
+		Метр: <input type="text" size=8 name="num1">
+		Сантиметр:
+		<input type="button" value=Конвертувати onClick="invert(form1)">
+		<input type="text" size=8 name="res">
+		<hr>
+		<input type="reset" value="Очистити">
+	</form>
+	<br><br><br><br><br><br>
+
+	<H4> Інкремент і декремент числа </H4>
+	<form Name="form2">
+		Число <input type="text" size=8 name="num">
+		<hr>
+		<input type="button" value=Конвертувати onClick="task2(form2)">
+
+		Інкремент<input type="text" size="8" name="increment">
+		Декремент<input type="text" size="8" name="decrement">
+		<hr>
+		<input type="reset" value="Очистити">
+	</form>
+</body>
+
+</html>
